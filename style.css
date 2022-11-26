@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(28, 28, 28);
+
+}
+
+.main {
+
+    background-color: rgb(240, 240, 140);
+    width: 100%;
+    box-shadow: 5px 5px 15px white;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+button {
+    border: 1px solid white;
+    height: 30px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+button:hover {
+    background-color: lightseagreen;
+}
+
+
+
+.card {
+    text-align: center;
+    margin: 200px auto;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(238, 184, 83);
+    color: white;
+    box-shadow: -5px -5px 15px;
+    font-size: larger;
+    padding: 10px;
+
+}
+
+
+.c1 {
+    transition: all 4s linear;
+}
+
+.c1:hover {
+    cursor: pointer;
+    transform: scale(2);
+    background-color: tomato;
+}
+
+.c2 {
+    transition: all 4s linear;
+}
+
+.c2:hover {
+    transform: scale(.5);
+    background-color: tomato;
+}
+
+.c3 {
+    transition: all 2s linear;
+}
+
+.c3:hover {
+    border-radius: 50%;
+    background-color: tomato;
+}
+
+.c4 {
+    transition: width 4s linear;
+}
+
+.c4:hover {
+    width: 350px;
+    background-color: tomato;
+}
+
+@media (min-width:340px) and (max-width:420px) {
+    .card {
+        flex-direction: row;
+    }
+
+    .right {
+        display: none;
+    }
+
+}
